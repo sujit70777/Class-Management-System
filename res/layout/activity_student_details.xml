@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_taking_class_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.myclasshelper.sujit007.myclasshelper.StudentDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="3dp"
+        android:text="TextView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textViewPP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="3dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewAP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="3dp"
+        android:text="TextView"
+
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewLP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="3dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/buttonmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:text="All Marks" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/attendenceMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".9"
+                android:text="Attendence Marks :"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/attendenceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editButton"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight=".1"
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/assignmentMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".9"
+                android:text="Assignment Marks :"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/assignemtButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editButton"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight=".1"
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/ctMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".9"
+                android:text="Class Test Marks :"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/ctButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editButton"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight=".1"
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card4"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/midMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".9"
+                android:text="Mid Exam Marks :"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/midButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editButton"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight=".1"
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card5"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/finalMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".9"
+                android:text="Final Exam Marks :"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/finalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editButton"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight=".1"
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/totalMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".9"
+                android:text="Total Marks :"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/totalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editButton"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".1"
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="invisible"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <GridView
+        android:id="@+id/gridVTakeClasses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:numColumns="2" />
+</LinearLayout>
